@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.blog_teaser
     - field.field.node.blog.body
     - field.field.node.blog.field_image
     - field.field.node.blog.field_thumbnail
@@ -10,17 +11,16 @@ dependencies:
     - image
     - text
     - user
-id: node.blog.default
+id: node.blog.blog_teaser
 targetEntityType: node
 bundle: blog
-mode: default
+mode: blog_teaser
 content:
   body:
     label: hidden
-    type: text_summary_or_trimmed
+    type: text_default
     weight: 101
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
@@ -44,6 +44,4 @@ content:
   links:
     weight: 100
     region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden: {  }
