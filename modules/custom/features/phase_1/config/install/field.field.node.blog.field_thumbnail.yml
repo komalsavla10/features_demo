@@ -10,7 +10,7 @@ id: node.blog.field_thumbnail
 field_name: field_thumbnail
 entity_type: node
 bundle: blog
-label: Thumbnail
+label: 'Thumbnail image'
 description: ''
 required: false
 translatable: false
